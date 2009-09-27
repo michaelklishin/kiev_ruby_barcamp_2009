@@ -1,3 +1,12 @@
+#!/usr/bin/env ruby -Ku
+
+#
+# Example #7:
+#
+#always use self.accessor from modules, and not only modules.
+# Otherwise, local variable will be created, and @ivar won't get assigned
+# via accessor.
+
 class Person
 
   #
@@ -22,7 +31,7 @@ class Person
 
   def valid?
     # should actually be self.api_token = self.class.generate_api_token:
-    # otherwise, api_token becomes a local variable    
+    # otherwise, api_token becomes a local variable
     api_token = self.class.generate_api_token
     self.api_token
   end # valid?

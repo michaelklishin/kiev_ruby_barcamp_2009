@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby -Ku
 
+#
+# Example #2:
+#
+# As a library author, you never know if there is super to call for your module.
+# super if defined? super will call superclass method if it is available, and
+# do nothing if it won't.
+
 module APIToken
   def valid?
     self.api_token = self.class.generate_api_token

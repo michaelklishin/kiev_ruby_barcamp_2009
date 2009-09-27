@@ -1,5 +1,15 @@
 #!/usr/bin/env ruby -Ku
 
+#
+# Example #5:
+#
+# class_eval (which in this example is used by .property method) forcefully
+# replaces method implementation, so there is no super to call
+#
+# so super(value).gsub(/,/, "") won't work
+#
+# see next example to find out how to do safe class_eval-ing
+
 require "rubygems"
 require "dm-core"
 

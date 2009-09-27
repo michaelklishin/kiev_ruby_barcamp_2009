@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby -Ku
 
+#
+# Example #6: safe class_eval-ing is done by creating a module,
+# class_eval-ing on it, and including it into a class we want to extend.
+#
+# It preserves ability for methods to call super, because module inclusion
+# results in an anonymous class in inheritance chain.
+
 module MostAwesomeExtensionEva
   def self.included(receiver)
     metaprogramming_goodness = Module.new
@@ -16,7 +23,7 @@ module MostAwesomeExtensionEva
 end
 
 class Entity
-  
+
   #
   # Behaviors
   #
