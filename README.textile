@@ -33,3 +33,16 @@ h2. Points of the talk
 * And beware of local var vs. accessor with self issue when writing modules (and not just modules)
 
 * Rails 3 codebase is almost alias_method_chain free now. You bet, this means something.
+
+h2. Useful links
+
+I personally learned a lot more about Ruby object model from Smalltalk books and articles than
+from Ruby books and blog posts. A lot of Smalltalk books are in public domain or available for free.
+
+Here is a few:
+
+ *  "Collection by Stéphane Ducasse":http://stephane.ducasse.free.fr/FreeBooks.html
+ * "Metaclasses in Smalltalk":http://www.ifi.uzh.ch/richter/Classes/oose2/05_Metaclasses/02_smalltalk/02_metaclasses_smalltalk.html
+   clearly explains what metaclasses are why metaclasses came to be in the first place.
+
+ * "Ruby Hacking Guide":http://rhg.rubyforge.org/ translated from Japanese is invaluable, especially if you are fine with C
